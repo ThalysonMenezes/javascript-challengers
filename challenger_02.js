@@ -1,6 +1,6 @@
 
 // Algoritmo que reverte strings
-// sem utilizar funções prontas do Javascript
+// sem utilizar funções nativas do Javascript
 
 function FirstReverse(str) { 
 
@@ -15,6 +15,9 @@ function FirstReverse(str) {
     // Concatena os elementos
     var new_str = '';
     for (let i = 0; i < reverse_str.length; i ++) new_str += reverse_str[i];
+
+    // Linha de código utilizando funções nativas do Javascript
+    // return str.split('').reverse().join('');
 
     return new_str;
 
