@@ -27,6 +27,7 @@ const binaryToHex = value => {
   };
 
   return hex = arr.reduce( (acc, cur) => {
+    if(cur === '0000') return acc;
     return acc + bin(cur)
   }, "");
 
